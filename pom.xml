@@ -24,7 +24,7 @@
   </parent>
 
   <artifactId>vertx-redis-client</artifactId>
-  <version>3.8.6-SNAPSHOT</version>
+  <version>3.8.106-SNAPSHOT</version>
 
   <name>Vert.x Redis Client</name>
 
