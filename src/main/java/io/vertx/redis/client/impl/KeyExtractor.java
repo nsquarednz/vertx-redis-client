@@ -8,7 +8,7 @@ import java.util.List;
 
 import static io.vertx.redis.client.Command.*;
 
-class KeyExtractor {
+public class KeyExtractor {
 
   static final byte[] STREAMS_UPPER_CASE = "STREAMS".getBytes(StandardCharsets.UTF_8);
   static final byte[] STREAMS_LOWER_CASE = "streams".getBytes(StandardCharsets.UTF_8);
@@ -29,7 +29,7 @@ class KeyExtractor {
    *
    * @return All keys of the command of the given request.
    */
-  static byte[][] extractMovableKeys(final RequestImpl req) {
+  public static byte[][] extractMovableKeys(final RequestImpl req) {
     final List<byte[]> args = Collections.unmodifiableList(req.getArgs());
     final List<byte[]> keys = new ArrayList<>();
 

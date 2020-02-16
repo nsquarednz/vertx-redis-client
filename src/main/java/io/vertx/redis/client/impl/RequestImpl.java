@@ -120,7 +120,7 @@ public final class RequestImpl implements Request {
     return buffer;
   }
 
-  List<byte[]> getArgs() {
+  public List<byte[]> getArgs() {
     return args;
   }
 
